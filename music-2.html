@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>古风音乐</title>
+		<link rel="icon" href="img/titma4.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/cssformusic-2.css"/>
+		<link rel="stylesheet" href="css/styleformusic-2.css">
+		<link rel="stylesheet" type="text/css" href="css/cssfordaohang.css"/>
+		<style type="text/css">
+			body{
+				overflow:scroll;
+				overflow-x:hidden;
+			}
+			#paihangpi{
+				position: relative;
+				left: 5%;
+				top: -480px;
+				z-index: -100;
+			}
+			.daohang{
+				background-color: #663300;
+			}
+			.daohang ul li a:hover{
+				background-color: #ffc200;
+			}
+			.daohang li{
+				background-color: #663300;
+				left: 50%;
+			}
+			
+			.daohang li a font{
+				color: white;
+			}
+			.daohang .logo{ width:120px; height:60px; 
+				position: relative;
+				left: 20%;
+				display:block;
+				background:url(img/音乐图标.png) no-repeat left center;
+				float:left;}
+		</style>
+		<script type="text/javascript">
+			function autoplay(ele){
+				var myAuto;
+				if(ele == a1) {				
+					myAuto = document.getElementById('pla1');
+				}
+				else if(ele == a2){
+					myAuto = document.getElementById('pla2');
+				}
+				else if(ele == a3){
+					myAuto = document.getElementById('pla3');
+				}
+				else if(ele == a4){
+					myAuto = document.getElementById('pla4');
+				}
+				else if(ele == a5){
+					myAuto = document.getElementById('pla5');
+				}
+				else if(ele == a6){
+					myAuto = document.getElementById('pla6');
+				}
+				myAuto.load();
+				myAuto.play();
+			}
+			function autopause(ele){
+				var myAuto;
+				if(ele == a1) {				
+					myAuto = document.getElementById('pla1');
+				}
+				else if(ele == a2){
+					myAuto = document.getElementById('pla2');
+				}
+				else if(ele == a3){
+					myAuto = document.getElementById('pla3');
+				}
+				else if(ele == a4){
+					myAuto = document.getElementById('pla4');
+				}
+				else if(ele == a5){
+					myAuto = document.getElementById('pla5');
+				}
+				else if(ele == a6){
+					myAuto = document.getElementById('pla6');
+				}
+				myAuto.pause();
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div id="backg" style="background-color: white; position: fixed; width: 100%; height: 100%; z-index: -100;">
+			<img src="img/Musicbg.png" height="100%" width="100%"/>
+		</div>
+		<div class="daohang">
+			<a href="music-2.html" class="logo"></a>
+			<ul>
+				<li>
+					<a href="music-1.html">
+						<font>推荐</font>
+					</a>
+				</li>
+				<li>
+					<a href="#" style="background-color: #ffc200;">
+						<font>排行榜</font>
+					</a>
+				</li>
+				<li>
+					<a href="music-3.html">
+						<font>歌单</font>
+					</a>
+				</li>
+				<li>
+					<a href="music-4.html">
+						<font>歌手</font>
+					</a>
+				</li>
+			</ul>
+			<div class="sousuo">
+				<input type="text" style="height: 30px;" placeholder="歌名/歌手/歌词"/>
+				<button style="height: 30px;">搜索</button>
+			</div>
+			
+		</div>
+		<div class="head">
+		<nav id="hexNav">
+		  <div id="menuBtn">
+		    <svg viewbox="0 0 100 100">
+		      <polygon points="50 2 7 26 7 74 50 98 93 74 93 26" fill="transparent" stroke-width="4" stroke="#585247" stroke-dasharray="0,0,300"/>
+		    </svg>
+		    <span></span>
+		  </div>
+		  <ul id="hex">
+		    <li class="tr">
+		    	<div class="clip">
+		    		<a href="#ge1" class="content"  onmouseover="autoplay(this)" onmouseleave="autopause(this)" id="a1">
+		    			<audio src="mp3/离骚片段.mp3" id="pla1"></audio>
+		      			<img src="img/离骚2.png" width="200px" height="100px" alt="离骚" />
+		      			<h2 class="title">离骚</h2>
+		      			<p>点击前往</p>
+		    		</a>
+		    	</div>
+		    </li>
+		    <li class="tr">
+		    	<div class="clip">
+		    		<a href="#ge2" class="content" onmouseover="autoplay(this)" onmouseleave="autopause(this)" id="a2">
+			    		<audio src="mp3/山有木兮片段.mp3" id="pla2"></audio>
+			      		<img src="img/上有木樨.png" alt="山有木兮" width="200px" height="10px"/>
+			      		<h2 class="title">山有木兮</h2>
+			      		<p>点击前往</p>
+		    		</a>
+		    	</div>
+		    </li>
+		    <li class="tr">
+		    	<div class="clip">
+		    		<a href="#ge3" class="content" onmouseover="autoplay(this)" onmouseleave="autopause(this)" id="a3">
+		    			<audio src="mp3/礼仪之邦片段.mp3" id="pla3"></audio>
+			      		<img src="img/礼仪之邦.jpg" alt="礼仪之邦" />
+			      		<h2 class="title">礼仪之邦</h2>
+			      		<p>点击前往</p>
+		    		</a>
+		    	</div>
+		    </li>
+		    <li class="tr">
+		    	<div class="clip">
+		    		<a href="#ge4" class="content" onmouseover="autoplay(this)" onmouseleave="autopause(this)" id="a4">
+		    			<audio src="mp3/银临 - 棠梨煎雪片段.mp3" id="pla4"></audio>
+			      		<img src="img/剪学.png" alt="棠梨煎雪" />
+			      		<h2 class="title">棠梨煎雪</h2>
+			      		<p>点击前往</p>
+		    		</a>
+		    	</div>
+		    </li>
+		    <li class="tr">
+		    	<div class="clip">
+		    		<a href="#ge5" class="content" onmouseover="autoplay(this)" onmouseleave="autopause(this)" id="a5">
+		    			<audio src="mp3/盗将行片段.mp3" id="pla5"></audio>
+			      		<img src="img/盗将行3.png" alt="盗将行"  width="200px" height="100px"/>
+			      		<h2 class="title">盗将行</h2>
+			      		<p>点击前往</p>
+		    		</a>
+		    	</div>
+		    </li>
+		    <li class="tr">
+		    	<div class="clip">
+		    		<a href="#ge6" class="content" onmouseover="autoplay(this)" onmouseleave="autopause(this)" id="a6">
+		    			<audio src="mp3/一拜天地片段.mp3" id="pla6"></audio>
+			      		<img src="img/一拜天地.png" alt="一拜天地" width="200px" height="150px"/>
+			      		<h2 class="title">一拜天地</h2>
+			      		<p>点击前往</p>
+		    		</a>
+		    	</div>
+		    </li>
+		  </ul>
+		</nav>
+	</div>
+	
+	<div id="jieshao">试听当前热门歌曲</div>
+	<img src="img/music首页.png" id="paihangpi" style="height: 600px;width: 1400px;"/>
+	<div class="backg_gedan" id="gedan1">
+			<img src="img/飙升榜.png" width="100%" height="25%"/>
+		<ul class="gedan" >
+			<li id="ge1">
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>1 离骚</p>
+					</a>		
+				</div>
+			</li>
+
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>2 锦鲤抄</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>3 琴师</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>4 秦淮八艳</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>5 倾尽天下</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>6 牵丝戏</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>7 步步为营</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>8 腐草为萤</p>
+					</a>		
+				</div>
+			</li>
+
+				<div class="jiaobiao">
+					<a href="">
+						<p>查看全部>></p>
+					</a>		
+				</div>
+
+
+		</ul>
+	</div>
+	<div class="backg_gedan" id="gedan2">
+		<img src="img/原创榜.png" width="100%" height="25%"/>
+		<ul class="gedan" >
+			<li>
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>1 清明上河图</p>
+					</a>		
+				</div>
+			</li>
+
+			<li id="ge2">
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>2 山有木兮</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>3 狐言</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>4 第三十八年夏至</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>5 白衣</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>6 江山为聘</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>7 离骚</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						
+						<p>8 九九八十一</p>
+					</a>		
+				</div>
+			</li>
+				<div class="jiaobiao">
+					<a href="">
+						
+						<p>查看全部>></p>
+					</a>		
+				</div>
+		</ul>
+	</div>
+	<div class="backg_gedan" id="gedan3">
+		<img src="img/新歌榜.png" width="100%" height="25%"/>
+		<ul class="gedan" >
+			<li>
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>1 生僻字</p>
+					</a>		
+				</div>
+			</li>
+
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>2 红颜旧</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>3 半壶纱</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>4 泸沽寻梦</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>5 化鹤归</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>6 乌篷谣</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>7 青衣</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						
+						<p>8 百鬼夜行抄</p>
+					</a>		
+				</div>
+			</li>
+			<div class="jiaobiao">
+				<a href="">
+					
+					<p>查看全部>></p>
+				</a>		
+			</div>
+		</ul>
+	</div>
+	<div class="backg_gedan" id="gedan4">
+		<img src="img/热歌榜.png" width="100%" height="25%"/>
+		<ul class="gedan" >
+			<li id="ge6">
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>1 一拜天地</p>
+					</a>		
+				</div>
+			</li>
+
+			<li id="ge5">
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>2 盗将行</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>3 木香</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>4 黑白小巷</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>5 上邪</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>6 雨巷</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>7 刹那芳华曲</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						
+						<p>8 不老梦</p>
+					</a>		
+				</div>
+			</li>
+			<div class="jiaobiao">
+				<a href="" >
+					
+					<p>查看全部>></p>
+				</a>	
+			</div>
+		</ul>
+	</div>
+	<div class="backg_gedan" id="gedan5">
+		<img src="img/风云榜.png" width="100%" height="25%"/>
+		<ul class="gedan" >
+			<li>
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>1 一拜天地</p>
+					</a>		
+				</div>
+			</li>
+
+			<li id="ge4">
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>2 棠梨煎雪</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>3 山鬼</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>4 山有木兮</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>5 眉间雪</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>6 华胥引</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>7 半壶纱</p>
+					</a>		
+				</div>
+			</li>
+			<li id="ge3">
+				<div class="gekuai geikuai_s">
+					<a href="">
+						
+						<p>8 礼仪之邦</p>
+					</a>		
+				</div>
+			</li>
+			<div class="jiaobiao">
+				<a href="">
+					
+					<p>查看全部>></p>
+				</a>		
+			</div>
+		</ul>
+	</div>
+	<div class="backg_gedan" id="gedan6">
+		<img src="img/歌手榜.png" width="100%" height="25%"/>
+		<ul class="gedan" >
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>1 河图</p>
+					</a>		
+				</div>
+			</li>
+
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>2 音频怪物</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>3 HITA</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>4 Winky诗</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>5 银临</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						<p>6 少司命</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai gekuai_d">
+					<a href="">
+						<p>7 小曲儿</p>
+					</a>		
+				</div>
+			</li>
+			<li >
+				<div class="gekuai geikuai_s">
+					<a href="">
+						
+						<p>8 排骨教主</p>
+					</a>		
+				</div>
+			</li>
+			<div class="jiaobiao">
+				<a href="">
+					
+					<p>查看全部>></p>
+				</a>		
+			</div>
+		</ul>
+	</div>
+	<div id="kuo">
+		<span style="font-family:arial;">Copyright &copy;古风古韵2018</span>
+		<a href="banquan.html" target="_blank">All Rights Reserved</a>
+	</div>
+	<script type="text/javascript">
+		var hexNav = document.getElementById('hexNav');
+
+		document.getElementById('menuBtn').onclick = function() {
+		    var className = ' ' + hexNav.className + ' ';
+		    if ( ~className.indexOf(' active ') ) {
+		        hexNav.className = className.replace(' active ', ' ');
+		    } else {
+		        hexNav.className += ' active';
+		    }              
+		}
+	</script>
+		
+	</body>
+</html>

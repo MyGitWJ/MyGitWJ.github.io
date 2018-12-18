@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>古风音乐</title>
+		<link rel="icon" href="img/titma4.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/cssfordaohang.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cssformusic-4.css" />
+		<style type="text/css">
+		.daohang{
+			background-color: #663300;
+		}
+		.daohang ul li a:hover{
+			background-color: #ffc200;
+			text-decoration: none;
+		}
+		.daohang li{
+			background-color: #663300;
+			left: 50%;
+		}
+		
+		.daohang li a font{
+			color: white;
+		}
+		.daohang .logo{ width:120px; height:60px; 
+			position: relative;
+			left: 20%;
+			display:block;
+			background:url(img/音乐图标.png) no-repeat left center;
+			float:left;}
+		 </style>
+	</head>
+	<body>
+		<div id="backg" style="background-color: white; position: fixed; width: 100%; height: 100%; z-index: -100;">
+		<img src="img/Musicbg.png" height="100%" width="100%"/>
+		</div>
+		<div class="daohang">
+			<a href="music-1.html" class="logo"></a>
+			<ul>
+				<li>
+					<a href="music-1.html">
+						<font>推荐</font>
+					</a>
+				</li>
+				<li>
+					<a href="music-2.html" >
+						<font>排行榜</font>
+					</a>
+				</li>
+				<li>
+					<a href="music-3.html">
+						<font>歌单</font>
+					</a>
+				</li>
+				<li>
+					<a href="#" style="background-color: #ffc200;">
+						<font>歌手</font>
+					</a>
+				</li>
+			</ul>
+			<div class="sousuo">
+				<input type="text" style="height: 30px;" placeholder="歌名/歌手/歌词"/>
+				<button style="height: 30px;">搜索</button>
+			</div>
+		</div>
+		<div class="neirong">
+			<div class="biao" id="biao1">
+				<div class="biao-daoyu">
+					<font style="font-size: 30px;font-family: 华文行楷, 仿宋;">榜单歌手</font>
+				</div>
+				<div class="biao-neirong">
+					<img src="img/直线.png" width="100%" height="20%" id="xian1"/>
+					<table>
+						<tr>
+							<td>
+								<img src="img/河图.png" width="130px" height="130px" id="mus1"/>
+								<br />
+								<a href="#"><font>河图</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/回音哥.png" width="130px" height="130px" id="mus2"/>
+								<br />
+								<a href="#"><font>回音哥</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/花粥.png" width="130px" height="130px" id="mus3"/>
+								<br />
+								<a href="#"><font>花粥</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/Winky诗.png" width="130px" height="130px" id="mus4"/>
+								<br />
+								<a href="#"><font>Winky诗</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/银临.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>银临</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/少司命.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>少司命</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/小曲儿.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>小曲儿</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/排骨教主.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>排骨教主</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/张杰.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>张杰</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/许嵩.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>许嵩</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="biao" id="biao2">
+				<div class="biao-daoyu">
+					<font style="font-size: 30px;font-family: 华文行楷, 仿宋;">热门歌手</font>
+				</div>
+				<div class="biao-neirong">
+					<img src="img/直线.png" width="100%" height="20%" id="xian2"/>
+					<table>
+						<tr>
+							<td>
+								<img src="img/河图.png" width="130px" height="130px" id="mus1"/>
+								<br />
+								<a href="#"><font>河图</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/回音哥.png" width="130px" height="130px" id="mus2"/>
+								<br />
+								<a href="#"><font>回音哥</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/花粥.png" width="130px" height="130px" id="mus3"/>
+								<br />
+								<a href="#"><font>花粥</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/Winky诗.png" width="130px" height="130px" id="mus4"/>
+								<br />
+								<a href="#"><font>Winky诗</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/银临.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>银临</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/少司命.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>少司命</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/小曲儿.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>小曲儿</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/排骨教主.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>排骨教主</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/张杰.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>张杰</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+							<td>
+								<img src="img/许嵩.png" width="130px" height="130px" id="mus5"/>
+								<br />
+								<a href="#"><font>许嵩</font></a>
+								<a class="an-zhuye" href="#" title="个人主页">
+									<img class="an-zhuye" src="img/个人主页按钮.png" />
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="biao" id="biao3">
+				<table width="800px">
+				  	<tr>
+				   		<td>
+				   			<ul>
+				   				<li>
+				   					<a href="#">花粥</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">少司命</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">银临</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">许嵩</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">张杰</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">回音哥</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">小曲儿</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">河图</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">Winky诗</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">伦桑</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">萧忆情</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">董贞</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">千草仙</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">齐栾</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">冰弦</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">心然</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">枫影儿</a>
+					   				<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">晃儿</a>
+					   				<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   			</ul>
+				   		</td>
+				   		<td>
+				   			<ul>
+				   				<li>
+				   					<a href="#">引月兮</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">梦之琉璃</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">千夜琉璃</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">沙拉莹</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">清响</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">清弄</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">唐家大小姐</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">雨霁天青</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">祈雨坊主</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">小狮子丢丢</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">EDIQ</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">绯村柯北</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">烟花Show</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">千树流搜索生</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">梦亦咸</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">镜子苓苒</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">澜庭夜雨</a>
+					   				<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">阿奴儿</a>
+					   				<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   			</ul>
+				   		</td>
+						<td>
+				   			<ul>
+				   				<li>
+				   					<a href="#">hita</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">finale</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">羊皮为裘</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">猫饭</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">月吟诗</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">彧宇痕羿</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">宫商徵羽</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">云追鹤</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">完美剑仙</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">风中采莲</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">谦居</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">逝雨</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">孤竹翊</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">柔絮晚晴</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">腾云驾雾琉璃</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">伊人耳边话</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+			   					<li>
+				   					<a href="#">千树流搜索生</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">梦亦咸</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   			</ul>
+						</td>
+				    	<td>
+				   			<ul>
+				   				<li>
+				   					<a href="#">逝雨</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">孤竹翊</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">柔絮晚晴</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">腾云驾雾琉璃</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">伊人耳边话</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+			   					<li>
+				   					<a href="#">千树流搜索生</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+								<li>
+				   					<a href="#">萧忆情</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">董贞</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">千草仙</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">齐栾</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">冰弦</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">心然</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">齐栾</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">冰弦</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">心然</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">枫影儿</a>
+					   				<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">晃儿</a>
+					   				<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">完美剑仙</a>
+					   				<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   			</ul>
+				    	</td>
+						<td>
+				   			<ul>
+				   				<li>
+				   					<a href="#">EDIQ</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">绯村柯</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">烟花</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">千树流</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">梦亦咸</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">宫商羽</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">云追鹤</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">完美仙</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">风中莲</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">谦居</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">逝雨</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">孤竹翊</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">柔絮晴</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">腾云</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">千草仙</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">齐栾</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">冰弦</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   				<li>
+				   					<a href="#">心然</a>
+				   					<a class="an-zhuye" href="#" title="个人主页">
+										<img class="an-zhuye" src="img/个人主页按钮.png" />
+									</a>
+				   				</li>
+				   			</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="biao" id="biao4">
+				<font><b>推荐</b></font>
+				<ul>
+					<li><a href="#">推荐歌手</a></li>
+					<li><a href="#">热门歌手</a></li>
+				</ul>
+			</div>
+			<div class="biao" id="biao5">
+				<div id="kuo">
+					<span style="font-family:arial;">Copyright &copy;古风古韵2018</span>
+					<a href="banquan.html" target="_blank">All Rights Reserved</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
